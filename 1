@@ -1,0 +1,15 @@
+
+def second_largest(numbers):
+    unique_numbers = list(set(numbers))
+
+    if len(unique_numbers) < 2:
+        return "No second largest number exists"
+
+    unique_numbers.sort(reverse=True)
+    return unique_numbers[1]
+
+
+numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+
+result = second_largest(numbers)
+print("Second largest number:", result)
