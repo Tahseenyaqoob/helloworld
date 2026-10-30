@@ -1,84 +1,178 @@
-# Python Snake Game
 
-A classic retro Snake game built with Python using the native `turtle` graphics framework. This project requires zero external dependencies and runs right out of the box on Windows, macOS, and Linux.
 
----
+# 🐍 SnakeX – Advanced Python Snake Game
 
-## Features
+## 📌 About the Project
 
-- **Zero External Dependencies:** Built using Python's standard library (`turtle`, `time`, `random`).
-- **Score & High Score Tracking:** Keeps track of your current score and updates your high score dynamically during gameplay.
-- **Classic Arcade Mechanics:** Grid-aligned movement, collision detection (walls and self-collision), and snake growth.
-- **Cross-Platform Compatibility:** Runs seamlessly on macOS, Windows, and Linux.
+SnakeX is an advanced version of the classic Snake Game developed using Python and the Turtle graphics library.
 
----
+The player controls a snake, collects food, earns points, avoids obstacles, and tries to achieve the highest score without hitting the walls or its own body.
 
-## System Requirements
+This project has been upgraded with multiple features to make the game more interactive, challenging, and enjoyable.
 
-- **Python:** 3.6 or higher.
+## 🚀 Features
 
----
+### 1. Start Menu
+- Attractive main menu.
+- Select game difficulty before starting.
+- Instructions displayed on the screen.
 
-## Getting Started
+### 2. Three Difficulty Levels
+Players can choose between:
+- Easy – Slower snake speed.
+- Medium – Normal snake speed.
+- Hard – Faster snake speed.
 
-### 1. Clone or Download
+### 3. Progressive Speed
+- Snake speed increases as the score increases.
+- Makes the game more challenging over time.
+- Speed increases every 20 points.
 
-Clone this repository or download the source files directly to your local machine:
+### 4. Scoring System
+- Normal Red Food: +10 points.
+- Bonus Gold Food: +50 points.
+- Blue Power-Up: +10 points and temporary slow speed.
 
-```bash
-git clone https://github.com/your-username/snake-game.git
-cd snake-game
-```
+### 5. Obstacles and Levels
+- Obstacles appear as the player reaches new levels.
+- Two new obstacles are added for every new level.
+- The player must avoid obstacles to survive.
 
-### 2. Run the Game
+### 6. Pause and Resume
+- Pause the game whenever needed.
+- Resume the game using the same key.
 
-No `pip install` required! Simply execute the script with Python:
+### 7. Restart System
+- Restart the game after losing.
+- Start a fresh game with a reset score and level.
+- Return to the main menu.
 
-#### macOS / Linux
-```bash
-python3 snake.py
-```
+### 8. High Score System
+- Saves the highest score in a text file.
+- Loads the previous high score when the game starts.
+- Updates the high score automatically.
 
-#### Windows
-```bash
-python snake.py
-```
+### 9. Collision Detection
+The game detects collisions with:
+- Game boundaries.
+- Snake's own body.
+- Obstacles.
 
----
+### 10. Random Food Generation
+- Food appears at random positions.
+- Food does not spawn on the snake or obstacles.
+- Different food types provide different rewards.
 
-## Controls
+## 🛠️ Technologies Used
+
+- Python 3
+- Turtle Graphics
+- Random Module
+- File Handling
+- Functions
+- Lists
+- Conditional Statements
+- Loops
+
+## 🎮 Keyboard Controls
 
 | Key | Action |
-| :--- | :--- |
-| **Up Arrow** ($\uparrow$) | Move Up |
-| **Down Arrow** ($\downarrow$) | Move Down |
-| **Left Arrow** ($\leftarrow$) | Move Left |
-| **Right Arrow** ($\rightarrow$) | Move Right |
+|---|---|
+| 1 | Select Easy Mode |
+| 2 | Select Medium Mode |
+| 3 | Select Hard Mode |
+| Enter | Start Game |
+| ↑ | Move Up |
+| ↓ | Move Down |
+| ← | Move Left |
+| → | Move Right |
+| W | Move Up |
+| S | Move Down |
+| A | Move Left |
+| D | Move Right |
+| Space | Pause / Resume |
+| R | Restart Game |
+| M | Return to Main Menu |
 
-> **Note:** The snake cannot reverse directly into itself (e.g., pressing Down while moving Up will be ignored to prevent self-collision).
+## ⚙️ Requirements
 
----
+- Python 3.x
+- Turtle graphics library (included with standard Python installations).
 
-## Game Rules
+No additional third-party packages are required.
 
-1. **Objective:** Eat the red food targets to grow your snake and increase your score.
-2. **Scoring:** Each piece of food grants **10 points**.
-3. **Game Over Conditions:**
-   - Hitting any of the four outer boundaries (walls).
-   - Running into your own body.
-4. **Reset:** Upon a game over, your score resets to zero, your high score is retained, and the snake returns to the center.
+## ▶️ How to Run the Project
 
----
+1. Install Python on your computer.
+2. Open Visual Studio Code.
+3. Open the folder containing your project.
+4. Create or open the Python file.
+5. Save the code as:
 
-## Customization Options
+   `snakex.py`
 
-You can easily customize game variables at the top of `snake.py`:
+6. Open the VS Code terminal.
+7. Run the following command:
 
-```python
-# Speed control: Lower values make the game faster
-DELAY = 0.1
+   ```bash
+   python3 snakex.py
+   ```
 
-# Window dimensions
-SCREEN_WIDTH = 600
-SCREEN_HEIGHT = 600
+8. Select your difficulty level.
+9. Press Enter to start playing.
+
+## 📁 Project Structure
+
+```text
+SnakeX/
+│
+├── snakex.py
+├── snake_high_score.txt
+└── README.md
 ```
+
+Note: `snake_high_score.txt` is automatically created when the game saves a high score.
+
+## 🧠 Concepts Learned
+
+This project demonstrates practical applications of:
+
+- Python programming fundamentals.
+- Object-oriented concepts through Turtle objects.
+- Functions and modular programming.
+- Lists and data management.
+- Random number generation.
+- Keyboard event handling.
+- File handling and data persistence.
+- Game loops and timers.
+- Collision detection and game logic.
+
+## 🔮 Future Improvements
+
+Possible future upgrades include:
+
+- Sound effects and background music.
+- Different snake skins and themes.
+- Attractive game-over animations.
+- Multiplayer mode.
+- Mobile-friendly controls.
+- More power-ups and special abilities.
+
+## 👨‍💻 Developer
+
+**Project Name:** SnakeX – Advanced Python Snake Game
+
+**Language:** Python
+
+**Framework/Library:** Turtle Graphics
+
+**Project Type:** Interactive Python Game
+
+## 🙏 Acknowledgement
+
+This project was developed to improve Python programming skills and understand game development concepts through practical implementation.
+
+Thank you for playing SnakeX!
+
+🐍 **Keep Playing. Keep Growing.**
+
